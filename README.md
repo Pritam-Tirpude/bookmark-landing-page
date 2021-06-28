@@ -29,9 +29,11 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 Your users should be able to:
 
-- View the optimal layout for the component depending on their device's screen size
+- View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-- Hide/Show the answer to a question when the question is clicked
+- Receive an error message when the newsletter form is submitted if:
+  - The input field is empty
+  - The email address is not formatted correctly
 
 ### Screenshot
 
