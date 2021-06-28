@@ -41,8 +41,8 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Bookmark Landing Page Solution](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam/hub/html5-css3-sass-flex-javascript-c81lyLu2z)
-- Live Site URL: [Live Site](https://faq-accordin-site.netlify.app/)
+- Solution URL: [Bookmark Landing Page Solution](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158/hub/htnl5-css3-flex-grid-sass-javascript-qy_zAWFx1)
+- Live Site URL: [Live Site](https://bookmark-landing-site.netlify.app/)
 
 ## My process
 
