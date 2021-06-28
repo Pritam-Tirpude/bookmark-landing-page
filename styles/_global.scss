@@ -1,0 +1,38 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary_soft_blue: hsl(231, 69%, 60%);
+$primary_soft_red: hsl(0, 94%, 66%);
+$neutral_grayish_blue: hsl(229, 8%, 60%);
+$neutral_very_dark_blue: hsl(229, 31%, 21%);
+$white_color: hsl(0, 0%, 100%);
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+button {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  transition: background 0.5s ease;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+  font-size: 1.5rem;
+}

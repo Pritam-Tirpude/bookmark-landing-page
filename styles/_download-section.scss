@@ -1,0 +1,100 @@
+.download-header-text {
+  @include flex(center, center, column);
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 3rem;
+    color: $neutral_very_dark_blue;
+  }
+
+  p {
+    text-align: center;
+    color: $neutral_grayish_blue;
+    padding: 2rem 45rem;
+    line-height: 2.5rem;
+
+    @media screen and (max-width: 768px) {
+      padding: 2rem 3rem;
+    }
+  }
+}
+
+.download-cards {
+  @include flex(center, center, row);
+  gap: 25px;
+  padding: 5rem 10rem;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 5rem 5rem;
+  }
+}
+
+.extensions-card {
+  text-align: center;
+  background: $white_color;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 1rem;
+}
+
+.extensions-card.firefox {
+  position: relative;
+  top: 50px;
+
+  @media screen and(max-width:768px) {
+    top: 0;
+  }
+}
+
+.extensions-card.opera {
+  position: relative;
+  top: 100px;
+
+  @media screen and(max-width:768px) {
+    top: 0;
+  }
+}
+.extension-text {
+  padding: 5rem;
+
+  h4 {
+    padding-top: 3rem;
+    color: $neutral_very_dark_blue;
+  }
+
+  p {
+    padding-top: 1rem;
+    font-size: small;
+    color: $neutral_grayish_blue;
+  }
+}
+
+.download-btn {
+  padding: 3rem;
+
+  .extension-btn {
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    background: $primary_soft_blue;
+    color: $white_color;
+    cursor: pointer;
+    padding: 1.5rem 2rem;
+    border: 2px solid transparent;
+
+    &:hover {
+      background: $white_color;
+      color: $primary_soft_blue;
+      border: 2px solid $primary_soft_blue;
+    }
+  }
+}
+
+.dots {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,100 @@
+.intro-section {
+  padding: 5rem 10rem;
+  @include flex(center, center, row);
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    padding: 5rem 3rem;
+  }
+}
+
+.intro-text {
+  flex: 1 0 40%;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+    color: $neutral_very_dark_blue;
+  }
+
+  p {
+    padding-top: 3rem;
+    color: $neutral_grayish_blue;
+    line-height: 2.5rem;
+  }
+
+  .intro-btns {
+    padding-top: 3rem;
+    @media screen and (max-width: 768px) {
+      @include flex(space-around, center, row);
+    }
+    .chrome-btn {
+      border-radius: 0.5rem;
+      background: $primary_soft_blue;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      border: none;
+      color: $white_color;
+      cursor: pointer;
+      padding: 1rem 3rem;
+      border: 2px solid transparent;
+
+      &:hover {
+        background: $white_color;
+        color: $primary_soft_blue;
+        border: 2px solid $primary_soft_blue;
+      }
+    }
+
+    .firefox-btn {
+      border-radius: 0.5rem;
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      color: $neutral_very_dark_blue;
+      cursor: pointer;
+      padding: 1rem 3rem;
+      margin-left: 1rem;
+      border: 2px solid transparent;
+      transition: border 0.5s ease;
+
+      &:hover {
+        border: 2px solid $neutral_very_dark_blue;
+      }
+    }
+  }
+}
+
+.intro-img {
+  flex: 1 0 60%;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.bg-vector {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  background: $primary_soft_blue;
+  border-bottom-left-radius: 15rem;
+  right: -700px;
+  top: 200px;
+  z-index: -1;
+
+  @media screen and (max-width: 768px) {
+    height: 20vh;
+    top: 130px;
+    right: -70px;
+  }
+}
